@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NFL
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+{% endblock %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block row_1_content_1 %}
+    <p>The National Football League Schedules.</p>
+{% endblock %}
+
+{% block date %}
+    <li>{{ date }}</li>
+{% endblock %}

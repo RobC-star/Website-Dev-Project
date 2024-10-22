@@ -1,0 +1,60 @@
+html {
+
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+
+    background: url('/static/football_flag.jpeg') no-repeat fixed center;
+    background-size: cover;
+}
+.body-navbar {
+    background-color: midnightblue;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    border-style: solid;
+    border-color: silver;
+    outline: .1rem solid midnightblue;
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+.body-navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.body-navbar-additional-items {
+    margin-left: 2rem;
+}
+
+.logoutBTN {
+    clear: both;
+    float: right;
+}
+
+.body-content {
+    padding: .2rem;
+}
+
+.body-content-row-1 {
+    display: flex;
+    border-bottom: .2rem solid silver;
+    padding: .5rem;
+}
+
+.body-content-row-1 p{
+    font-size: 1.6rem;
+    color: black;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: bold;
+}
+
+footer li{
+    font-size: 1.2rem;
+    list-style-type: none;
+    font-weight: 1000;
+    margin-inline-start: .5rem;
+}
+a:hover {color: yellow;}

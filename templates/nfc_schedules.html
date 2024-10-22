@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NFC
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+{% endblock %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='schedule.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block row_1_content_1 %}
+    <p>The 2023 National Football Conference Schedules.</p>
+{% endblock %}
+
+{% block row_2_content_1 %}
+    <h1>NFC North</h1>
+    <ul >
+        <li><a href="https://chicagobears.com/schedule" target="_blank">Bears</a></li>
+        <li><a href="https://www.detroitlions.com/schedule" target="_blank">Lions</a></li>
+        <li><a href="https://www.packers.com/schedule" target="_blank">Packers</a></li>
+        <li><a href="https://www.vikings.com/schedule" target="_blank">Vikings</a></li>
+    </ul>
+{% endblock %}
+
+{% block row_2_content_2 %}
+    <h2>NFC East</h2>
+    <ul>
+        <li><a href="https://www.commanders.com/schedule" target="_blank">Commanders</a></li>
+        <li><a href="https://www.philadelphiaeagles.com/schedule" target="_blank">Eagles</a></li>
+        <li><a href="https://www.giants.com/schedule" target="_blank">Giants</a></li>
+        <li><a href="https://www.dallascowboys.com/schedule" target="_blank">Cowboys</a></li>
+    </ul>
+{% endblock %}
+
+{% block row_2_content_3 %}
+    <h3>NFC South</h3>
+    <ul>
+        <li><a href="https://www.buccaneers.com/schedule" target="_blank">Buccaneers</a></li>
+        <li><a href="https://www.neworleanssaints.com/schedule" target="_blank">Saints</a></li>
+        <li><a href="https://www.panthers.com/schedule" target="_blank">Panthers</a></li>
+        <li><a href="https://www.atlantafalcons.com/schedule" target="_blank">Falcons</a></li>
+    </ul>
+{% endblock %}
+
+{% block row_2_content_4 %}
+    <h4>NFC West</h4>
+    <ul>
+        <li><a href="https://www.azcardinals.com/schedule" target="_blank">Cardinals</a></li>
+        <li><a href="https://www.seahawks.com/schedule" target="_blank">Seahawks</a></li>
+        <li><a href="https://www.49ers.com/schedule" target="_blank">49ers</a></li>
+        <li><a href="https://www.therams.com/schedule" target="_blank">Rams</a></li>
+    </ul>
+{% endblock %}
+
+{% block date %}
+    <li>{{ date }}</li>
+{% endblock %}

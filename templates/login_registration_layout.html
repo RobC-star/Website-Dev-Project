@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>{% block title %}{% endblock %}</title>
+        {% block favicon %}{% endblock %}
+        {% block script %}{% endblock %}
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+        <div class="body-heading">
+            {% block body_heading %}{% endblock %}
+        </div>
+
+        <div class="form-heading">
+            {% block form_heading %}{% endblock %}
+        </div>
+
+        <div class = "flash_message">
+            {% block flash_message %}{% endblock %}
+        </div>
+
+        <form {% block form_server %}{% endblock %}>
+            <div>
+                {% block label_username %}{% endblock %}
+                {% block input_username %}{% endblock %}
+            </div>
+
+            <div>
+                {% block label_password %}{% endblock %}
+                {% block input_password %}{% endblock %}
+                {% block label_and_input_view %}{% endblock %}
+            </div>
+
+            <div>
+                {% block label_first_name %}{% endblock %}
+                {% block input_first_name %}{% endblock %}
+            </div>
+
+            <div>
+                {% block label_last_name %}{% endblock %}
+                {% block input_last_name %}{% endblock %}
+            </div>
+
+            <div>
+                {% block label_email %}{% endblock %}
+                {% block input_email %}{% endblock %}
+            </div>
+
+            <div>
+                {% block input_submit_btn %}{% endblock %}
+                {% block input_register_btn %}{% endblock %}
+                {% block exit_update_password_btn %}{% endblock %}
+            </div>
+
+            <div>
+                {% block update_password_btn %}{% endblock %}
+            </div>
+
+            <div>
+                {% block form_submit_btn %}{% endblock %}
+                {% block form_update_btn %}{% endblock %}
+            </div>
+        </form>
+
+        <footer>{% block date %}{% endblock %}</footer>
+    </body>
+</html>

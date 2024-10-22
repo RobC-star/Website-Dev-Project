@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        {% block favicon %}{% endblock %}
+        {% block css %}{% endblock %}
+    </head>
+
+    <body>
+        <div class="body-navbar">
+            <a href="{{ url_for('home_page') }}" class="body-navbar-base-item">Schedules</a>
+            <a href="{{ url_for('league_page') }}" class="body-navbar-additional-items">League</a>
+            <a href="{{ url_for('afc_page') }}" class="body-navbar-additional-items">AFC</a>
+            <a href="{{ url_for('nfc_page') }}" class="body-navbar-additional-items">NFC</a>
+
+            {% block logout_btn %}
+                <input type="button" class="logoutBTN" onclick="location.href='/login'" value="Logout">
+            {% endblock %}
+        </div>
+
+        <div class="body-content">
+
+            <div class = "body-content-row-1">
+                {% block row_1_content_1 %}{% endblock %}
+            </div>
+
+            <div class = "body-content-row-2">
+
+                <div class = "body-content-row-2-columns">
+                    {% block row_2_content_1 %}{% endblock %}
+                </div>
+
+                <div class = "body-content-row-2-columns">
+                    {% block row_2_content_2 %}{% endblock %}
+                    {% block row_2_content_2_table %}{% endblock %}
+                </div>
+
+                <div class = "body-content-row-2-columns">
+                    {% block row_2_content_3 %}{% endblock %}
+                </div>
+
+                <div class = "body-content-row-2-columns">
+                    {% block row_2_content_4 %}{% endblock %}
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            {% block date %}{% endblock %}
+        </footer>
+
+    </body>
+</html>

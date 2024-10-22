@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    AFC
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+{% endblock %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='schedule.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block row_1_content_1 %}
+    <p>The 2023 American Football Conference Schedules</p>
+{% endblock %}
+
+{% block row_2_content_1 %}
+    <h1>AFC North</h1>
+    <ol>
+        <li><a href="https://www.baltimoreravens.com/schedule/" target="_blank">Ravens</a></li>
+        <li><a href="https://www.bengals.com/schedule/" target="_blank">Bengals</a></li>
+        <li><a href="https://www.clevelandbrowns.com/schedule/" target="_blank">Browns</a></li>
+        <li><a href="https://www.steelers.com/schedule/" target="_blank">Steelers</a></li>
+    </ol>
+{% endblock %}
+
+{% block row_2_content_2 %}
+    <h2>AFC East</h2>
+    <ol>
+        <li><a href="https://www.miamidolphins.com/schedule/" target="_blank">Dolphins</a></li>
+        <li><a href="https://www.buffalobills.com/schedule/" target="_blank">Bills</a></li>
+        <li><a href="https://www.patriots.com/schedule/" target="_blank">Patriots</a></li>
+        <li><a href="https://www.newyorkjets.com/schedule/" target="_blank">Jets</a></li>
+    </ol>
+{% endblock %}
+
+{% block row_2_content_3 %}
+    <h3>AFC South</h3>
+    <ol>
+        <li><a href="https://www.houstontexans.com/schedule/" target="_blank">Texans</a></li>
+        <li><a href="https://www.colts.com/schedule/" target="_blank">Colts</a></li>
+        <li><a href="https://www.jaguars.com/schedule/" target="_blank">Jaguars</a></li>
+        <li><a href="https://www.tennesseetitans.com/schedule/" target="_blank">Titans</a></li>
+    </ol>
+{% endblock %}
+
+{% block row_2_content_4 %}
+    <h4>AFC West</h4>
+    <ol>
+        <li><a href="https://www.denverbroncos.com/schedule/" target="_blank">Broncos</a></li>
+        <li><a href="https://www.chiefs.com/schedule/" target="_blank">Chiefs</a></li>
+        <li><a href="https://www.raiders.com/schedule/" target="_blank">Raiders</a></li>
+        <li><a href="https://www.chargers.com/schedule" target="_blank">Chargers</a></li>
+    </ol>
+{% endblock %}
+
+{% block date %}
+    <li>{{ date }}</li>
+{% endblock %}

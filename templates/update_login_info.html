@@ -1,0 +1,85 @@
+{% extends "login_registration_layout.html" %}
+
+{% block title %}
+Please Log In
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+{% endblock %}
+
+{% block script %}
+<script type = "text/javascript" src="../static/form_controls.js"></script>
+{% endblock %}
+
+{% block css %}
+<link href="{{ url_for('static', filename='login_registration.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body_heading %}
+    <h1>The National Football League Schedules.</h1>
+{% endblock %}
+
+{% block form_heading %}
+    <h1>Update Your Current Password</h1>
+{% endblock %}
+
+{% block form_server %}
+action={{ server_form }} method="post"
+{% endblock %}
+
+{% block label_username %}
+<label class = "field" for="username">Username</label>
+{% endblock %}
+
+{% block input_username %}
+    <input type="text"
+        name="username"
+        pattern = "^[^\s]{4,}"
+        title="The field must contain at least 4 characters without spaces."
+        required>
+{% endblock %}
+
+{% block label_password %}
+<label class = "field" for="password">Password</label>
+{% endblock %}
+
+{% block input_password %}
+    <input type="password"
+           value=""
+           pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*\W)[^\s]{12,}"
+           name="password"
+           id="my_password"
+           title="The field must contain at least 12 characters without spaces and 1 of each: a number, a uppercase, a lowercase, and a special character."
+           required>
+{% endblock %}
+
+{% block label_and_input_view %}
+    <label class = "view"><input type="checkbox" onclick="myFunction()">view</label>
+{% endblock %}
+
+{% block input_submit_btn %}
+    <input type="submit" class="submit_btn" name="updating" value="Update">
+{% endblock %}
+
+{% block exit_update_password_btn %}
+    <input type="button" class="exit_to_login_btn" onClick="window.location.href='/login'" value="Exit">
+{% endblock %}
+
+{% block form_submit_btn %}
+    <input type="hidden" name="form_submit_update_btn" value="update_login_info">
+{% endblock %}
+
+{% block flash_message %}
+    {% with messages = get_flashed_messages()  %}
+       {% if messages %}
+          {% for message in messages %}
+             {{ message }}
+          {% endfor %}
+       {% endif %}
+    {% endwith %}
+{% endblock %}
+
+{% block date %}
+    <li>{{ date }}</li>
+{% endblock %}

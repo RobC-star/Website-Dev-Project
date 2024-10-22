@@ -1,0 +1,95 @@
+@import "home.css";
+body{
+    background: url('/static/football_raining.jpeg') no-repeat fixed center;
+    background-size: cover;
+}
+.body-content-row-2-columns table{
+    border: .2rem solid silver;
+    border-collapse: collapse;
+}
+
+.body-content-row-2-columns caption {
+    text-align: center;
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: midnightblue;
+    border: .2rem solid silver;
+    border-bottom: none;
+    border-collapse: collapse;
+}
+
+.body-content-row-2-columns td{
+    padding: .5rem .5rem .5rem .5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: midnightblue;
+    border: .2rem solid silver;
+    border-collapse: collapse;
+}
+
+.body-content-row-2-columns tr{
+    text-align: center;
+}
+
+.body-content-row-2 {
+    display: flex;
+    white-space: nowrap;
+    border-bottom: .2rem solid silver;
+}
+
+.body-content-row-2-columns{
+    flex: 25%;
+    padding: .5rem;
+}
+
+.body-content-row-2-columns h1{
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.body-content-row-2-columns h2{
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.body-content-row-2-columns h3{
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.body-content-row-2-columns h4{
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.body-content-row-2-columns ul{
+    font-size: 1.6rem;
+    list-style-type: none;
+    padding-inline-start: 2rem;
+}
+
+.body-content-row-2-columns ol{
+    font-size: 1.6rem;
+    list-style-type: none;
+    padding-inline-start: 2rem;
+}
+
+.body-content-row-2-columns li{
+    font-size: 1.6rem;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+    list-style-type: none;
+}
+
+.body-content-row-2 a:link {color: blue}
+.body-content-row-2 a:visited {color: blue}
+.body-content-row-2 a:hover {color: yellow}
+
+
+

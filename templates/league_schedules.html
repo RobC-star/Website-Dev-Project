@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    League
+{% endblock %}
+
+{% block favicon %}
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+{% endblock %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='schedule.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block row_1_content_1 %}
+    <p>The 2023 National Football League Schedules.</p>
+{% endblock %}
+
+{% block row_2_content_1 %}
+    <h1><a href="https://www.nfl.com/schedules/monday-night-football" target="_blank">Monday Night Football</a></h1>
+
+    <h2><a href="https://www.nfl.com/schedules/sunday-night-football" target="_blank">Sunday Night Football</a></h2>
+
+    <h3><a href="https://www.nfl.com/tnf" target="_blank">Thursday Night Football</a></h3>
+{% endblock %}
+
+{% block row_2_content_2_table %}
+    <table>
+        <caption>Monday Night Football</caption>
+        <tr>
+            <td rowspan="1" colspan="1">Week 1</td>
+            <td rowspan="1" colspan="1">8:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ESPN</td>
+            <td rowspan="1" colspan="1">9/11</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="1">Week 2</td>
+            <td rowspan="1" colspan="1">7:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ESPN</td>
+            <td rowspan="2" colspan="1">9/18</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">8:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ABC</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="1">Week 3</td>
+            <td rowspan="1" colspan="1">7:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ABC</td>
+            <td rowspan="2" colspan="1">9/25</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">8:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ESPN</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">Week 4</td>
+            <td rowspan="1" colspan="1">8:15 (EDT)</td>
+            <td rowspan="1" colspan="1">ESPN</td>
+            <td rowspan="1" colspan="1">10/2</td>
+        </tr>
+    </table>
+{% endblock %}
+
+{% block date %}
+    <li>{{ date }}</li>
+{% endblock %}
